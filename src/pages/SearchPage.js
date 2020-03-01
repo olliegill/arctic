@@ -14,6 +14,10 @@ class SearchPage extends React.Component {
         this.props.appStore.handleSearch(event.currentTarget.value);
     }
 
+    componentWillUnmount() {
+        this.props.appStore.removeSearchData();
+    }
+
     render() {
         return (
             <PageLayout>
@@ -28,9 +32,7 @@ class SearchPage extends React.Component {
                     </SearchList>
                 </div>
             </PageLayout>
-
         );
-
     }
 }
 

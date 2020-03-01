@@ -7,6 +7,7 @@ class AppStore {
     isSearchResultsLoading;
 
     handleSearch = (query) => {
+        console.log('hihihih');
         this.isSearchResultsLoading = true;
         return new Promise((resolve, reject) => {
             fetchData(query)
@@ -38,11 +39,16 @@ class AppStore {
                 });
         });
     }
+
+    removeSearchData = () => {
+        this.searchResults = [];
+    }
 }
 
 export default decorate(AppStore, {
     handleSearch: action,
     fetchDataByRepoName: action,
+    removeSearchData: action,
     searchResults: observable,
     repoData: observable,
     isSearchResultsLoading: observable

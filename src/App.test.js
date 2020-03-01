@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "mobx-react";
 import AppStore from "./stores/AppStore";
-jest.mock('./api/api');
+import * as api from './api/api';
 
 let appStore = new AppStore();
 
@@ -21,11 +21,11 @@ it('renders without crashing', () => {
 });
 
 describe("AppStore", () => {
-  it("searches repos", () => {
-    const appStore = new AppStore;
-    beforeEach(() => {
-        appStore.handleSearch("test ");
-    });
-    expect(appStore.searchResults).toEqual([])
-  })
+    it("searches repos", () => {
+        const appStore = new AppStore;
+        beforeEach(() => {
+            appStore.handleSearch("test ");
+        });
+        expect(appStore.searchResults).toEqual([])
+    })
 });

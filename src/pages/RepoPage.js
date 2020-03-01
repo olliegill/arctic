@@ -22,9 +22,11 @@ class RepoPage extends React.Component {
 
         if (this.props.appStore.isSearchResultsLoading) {
             return (
-                <div className="searchList__loading">
-                    <LoadingSpinner />
-                </div>
+                <PageLayout>
+                    <div className="searchList__loading">
+                        <LoadingSpinner />
+                    </div>
+                </PageLayout>
             );
         }
 
@@ -78,7 +80,6 @@ class RepoPage extends React.Component {
         );
     }
 }
-
 
 RepoPage.propTypes = {
     appStore: PropTypes.object

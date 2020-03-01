@@ -1,14 +1,23 @@
 .pageLayout {
     background-color: #FAFBFC;
     min-height: 100vh;
-    padding: 40px;
 
-    @media (max-width: 500px) {
-        padding: 20px;
-    }
+}
+
+.pageLayout__header {
+    background-color: #1B1F49;
+    margin: 0 0 40px 0;
+}
+
+.pageLayout__headerImage {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    padding: 20px 0;
 }
 
 .pageLayout__inner {
-    max-width: 900px;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 0 20px;
 }

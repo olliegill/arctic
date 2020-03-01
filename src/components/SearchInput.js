@@ -5,6 +5,7 @@ import './searchInput.scss';
 const SearchInput = ({ onChange }) => {
     return (
         <input
+            autoFocus={true}
             className="searchInput"
             onChange={onChange}
             placeholder="Search by repository name"

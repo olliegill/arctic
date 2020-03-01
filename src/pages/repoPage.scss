@@ -1,0 +1,85 @@
+.repoPage {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 678px) {
+        display: block;
+    }
+}
+
+.repoPage__ownerDetails {
+    width: 300px;
+    margin: 0 20px 0 0;
+    border: solid #444444 1px;
+    padding: 10px;
+    font-size: 1.4rem;
+    background-color: #FFFFFF;
+
+    @media (max-width: 678px) {
+        width: 100%;
+        display: flex;
+        margin: 0 0 20px 0;
+    }
+}
+
+.repoPage__ownerImageOuter {
+    width: 100%;
+
+    @media (max-width: 678px) {
+        width: 100px;
+        margin: 0 10px 0 0;
+    }
+}
+
+.repoPage__ownerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.repoPage__ownerData {
+    @media (max-width: 678px) {
+        flex: 1 1 auto;
+        width: calc(100% - 120px);
+    }
+}
+
+.repoPage__ownerName {
+    margin: 0 0 5px 0;
+}
+
+.repoPage__ownerLink {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    word-wrap: break-word;
+
+    &:hover {
+        text-decoration: underline;
+        color: #5C8FEC;
+    }
+}
+
+.repoPage__repoDetails {
+    flex: 1 1 auto;
+    font-size: 1.4rem;
+}
+
+.repoPage__repoName {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    color: #1B6CD0;
+}
+
+.repoPage__repoDescription {
+    margin: 0 0 10px 0;
+}
+
+.repoPage__repoUsers {
+    display: inline-flex;
+    margin: 0 0 10px 0;
+}
+
+.repoPage__repoData {
+    margin: 0 0 10px 0;
+}

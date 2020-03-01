@@ -20,7 +20,7 @@ const SearchList = ({ children, isLoading }) => {
                     {children}
                 </ul>
             ) : (
-                <div>please search repositories</div>
+                <div className="searchList__helpText">please search repositories</div>
             )}
         </div>
     );

@@ -5,7 +5,7 @@ import './userInteraction.scss';
 const UserInteraction = ({ name, image, value }) => (
     <div className="userInteraction">
         <div className="userInteraction__image">
-            {name} <span className="userInteraction__imageInner">{image}</span>
+            {name} <div className="userInteraction__imageInner">{image}</div>
         </div>
         <div className="userInteraction__value">
             {value}

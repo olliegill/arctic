@@ -5,7 +5,6 @@ import RepoPage from './pages/RepoPage';
 
 class App extends React.Component {
     render() {
-        // <div>/learn react/i</div>
         return (
             <Router>
                 <Route exact path="/" component={SearchPage} />

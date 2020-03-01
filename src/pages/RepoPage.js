@@ -72,7 +72,7 @@ class RepoPage extends React.Component {
                             Created: {moment(data.created_at).format("DD MMM YYYY HH:mm")}
                         </div>
                         <div className="repoPage__repoData">
-                            Updated: {moment(data.updated_at).format("DD MMM YYYY HH:mm")}
+                            Last Updated: {moment(data.updated_at).format("DD MMM YYYY HH:mm")}
                         </div>
                     </div>
                 </div>

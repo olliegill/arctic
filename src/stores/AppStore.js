@@ -7,7 +7,6 @@ class AppStore {
     isSearchResultsLoading;
 
     handleSearch = (query) => {
-        console.log('hihihih');
         this.isSearchResultsLoading = true;
         return new Promise((resolve, reject) => {
             fetchData(query)

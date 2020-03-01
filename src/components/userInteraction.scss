@@ -9,6 +9,8 @@
 }
 
 .userInteraction__image {
+    display: flex;
+    align-items: center;
     border-radius: 3px 0 0 3px;
     padding: 5px;
     border-right: solid 1px #C4C8CC;
@@ -16,7 +18,8 @@
 }
 
 .userInteraction__imageInner {
-
+    max-height: 14px;
+    margin: 0 0 0 5px;
 }
 
 .userInteraction__value {
